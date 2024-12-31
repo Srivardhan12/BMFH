@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx"
-import Home from "./components/Home.jsx"
-import ViewData from "./components/ViewData.jsx"
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import ViewData from "./components/ViewData";
+
 
 export default function App() {
   return (

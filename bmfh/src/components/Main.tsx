@@ -5,7 +5,7 @@ export default function Main() {
   const [selectedLocation, setSelectedLocation] = useState("Select location");
   const locations = ["Location 1", "Location 2", "Location 3", "Location 4"];
 
-  const handleSelect = (location) => {
+  const handleSelect = (location: string) => {
     setSelectedLocation(location);
     setDropdownOpen(false);
   };
@@ -40,11 +40,10 @@ export default function Main() {
                   </span>
                 </button>
                 <div
-                  className={`absolute left-0 z-40 mt-2 w-full rounded-md bg-blue-100 py-[10px] shadow-1 transition-all ${
-                    dropdownOpen
-                      ? "top-full opacity-100 visible"
-                      : "top-[110%] invisible opacity-0"
-                  }`}
+                  className={`absolute left-0 z-40 mt-2 w-full rounded-md bg-blue-100 py-[10px] shadow-1 transition-all ${dropdownOpen
+                    ? "top-full opacity-100 visible"
+                    : "top-[110%] invisible opacity-0"
+                    }`}
                 >
                   {locations.map((location, index) => (
                     <button
