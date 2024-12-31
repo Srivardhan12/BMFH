@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import ViewData from "./components/ViewData";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar.jsx"
+import Home from "./components/Home.jsx"
+import ViewData from "./components/ViewData.jsx"
 
 export default function App() {
   return (
@@ -13,6 +13,6 @@ export default function App() {
           <Route path="/view-venue" element={<ViewData />} />
         </Routes>
       </div>
-    </Router>
+    </Router >
   );
 }
