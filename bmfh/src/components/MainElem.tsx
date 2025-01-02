@@ -52,7 +52,7 @@ export default function Main() {
             <div className="text-center">
               <div className="relative mt-3 inline-block text-left">
                 <button
-                  className="px-4 py-2 bg-white rounded-md shadow-md"
+                  className="px-4 py-2 bg-white rounded-sm shadow-md"
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                   disabled={loading || !!error}
                 >
@@ -72,7 +72,7 @@ export default function Main() {
                             setSelectedLocation(location);
                             setDropdownOpen(false);
                           }}
-                          className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                          className="px-4 py-2 hover:bg-gray-200 cursor-pointer rounded-md"
                         >
                           {location}
                         </div>
@@ -87,7 +87,7 @@ export default function Main() {
               </div>
               <button
                 onClick={handleNavigate}
-                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
+                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-sm ml-2"
               >
                 View Venues
               </button>
