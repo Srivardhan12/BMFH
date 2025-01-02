@@ -1,10 +1,12 @@
-name = "backend"
+name = "bmfh"
 main = "src/index.ts"
 compatibility_date = "2025-01-01"
 
 # compatibility_flags = [ "nodejs_compat" ]
 
 [vars]
+DATABASE_URL = "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiYmMxNDFlMTgtNTJlOC00MDM3LTgwMGItNGExNjUxZWJjZGRlIiwidGVuYW50X2lkIjoiOTdmMjZjY2JkYzFiOGIwODEzZTNhZWVlYmVlNTA3MWVhZTBhYmMxMzYwZTEzMjhkZjQ5ZmM5ZDE2YmY2OGI3ZiIsImludGVybmFsX3NlY3JldCI6IjJlOWE0NjNlLTQyMTEtNGYzOS05ZmUyLWQ5ZTQxZGE4NmU1NyJ9.TkLNJ4ixLD4NFXpWfMVgqd5mPZkaR0kFGTCOZctPG-Q"
+
 
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
