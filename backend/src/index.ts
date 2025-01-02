@@ -33,14 +33,6 @@ app.post('/add-venue', async (c) => {
     }).$extends(withAccelerate());
 
     const body = await c.req.json();
-    // console.log('Request Body:', body); 
-
-    // const requiredFields = ['image', 'name', 'location', 'rating', 'phoneNumber'];
-    // const error = validateBody(body, requiredFields);
-    // if (error) {
-    //   console.log('Validation Error:', error);
-    //   return c.json({ error }, 400);
-    // }
 
     const venue = await prisma.venue.create({
       data: {

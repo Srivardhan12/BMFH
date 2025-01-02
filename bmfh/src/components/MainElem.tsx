@@ -41,7 +41,7 @@ export default function Main() {
   };
 
   return (
-    <div className="flex h-[70vh] justify-center items-center bg-gray-900">
+    <div className="flex h-[70vh] bg-[url('../assests/landing-page-image.jpg')] justify-center items-center">
       <div>
         <p className="text-2xl text-slate-100 font-semibold text-center">
           BMFH! One-stop destination for everything you need to plan <br /> for
@@ -52,7 +52,7 @@ export default function Main() {
             <div className="text-center">
               <div className="relative mt-3 inline-block text-left">
                 <button
-                  className="px-4 py-2 bg-white rounded-sm shadow-md"
+                  className="px-4 py-2 min-w-32 bg-white rounded-sm shadow-md"
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                   disabled={loading || !!error}
                 >

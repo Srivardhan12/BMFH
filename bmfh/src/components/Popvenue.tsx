@@ -27,13 +27,13 @@ export default function PopVenue({ popularVenues }: PopVenueProps) {
       <div className="flex flex-wrap gap-6">
         {popularVenues.length > 0 ? (
           popularVenues.map((data, index) => (
-            <div className="flex border border-gray-300 rounded-sm" key={index}>
+            <div className="flex min-w-56 rounded-sm" key={index}>
               <img
                 src={convertBase64ToImageUrl(data.image)}
                 alt={data.name}
-                className="h-40 aspect-auto w-fit object-cover rounded-sm"
+                className="max-h-40 max-w-30 object-cover rounded-md"
               />
-              <div className="mt-2 px-2">
+              <div className="px-3">
                 <p className="font-semibold text-xl">{data.name}</p>
                 <p className="text-sm text-gray-500 font-semibold">{data.location}</p>
                 <p className="text-blue-500">Rating: {data.rating}/5</p>
